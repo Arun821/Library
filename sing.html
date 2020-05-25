@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function(){
+          $('#icon').click(function(){
+              $('ul').toggleClass('show');
+          });
+        });
+    </script>
+</head>
+<body >
+    <div class="container-fluid">
+        <div class="row">
+            <nav>
+                <ul>
+                    <li><a class="active text-decoration-none font-weight-bold" href="#"><i class="fa fa-home" aria-hidden="true"></i>home</a></li>
+                    <li><a class="text-decoration-none font-weight-bold" href="sing.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign up</a></li>
+                    <li><a class="text-decoration-none font-weight-bold" href="login.html"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+                </ul>
+                <label id="icon">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid sign">
+        <div class="frm">
+            <form action="login.html" method="post" onsubmit="return validation()">
+                <h1>Sign Up</h1>
+                <!--<div id="error_message"></div>-->
+                <input type="text" name="" id="fname" placeholder="First name"><br>
+                <span id="fnameError"></span>
+                <input type="text" name="" id="sname" placeholder="Last name"><br>
+                <span id="snameError"></span>
+                <input type="date" name="" id="dob"><br>
+                <span id="dobError"></span>
+                <input type="email" name="" id="mail" placeholder="Email"><br>
+                <span id="emailError"></span>
+                <input type="number" name="" id="phn" placeholder="Phone number"><br>
+                <span id="phnError"></span>
+                <input type="password" name="" id="pass" placeholder="Password" onkeyup="strength()"><br>
+                <span id="passError"></span>
+                <input type="password" name="" id="cpass" placeholder="Confirm password"><br>
+                <span id="cpassError"></span><br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="footer alig">
+            <h2>Follow Us</h2>
+            <div class="row r1">
+                <button id="b1">Twitter</button>
+                <button id="b2">Facebook</button>
+                <button id="b3">Google+</button>
+            </div>
+        </div>
+    </div>
+    <script src="library.js"></script>
+</body>
+</html>

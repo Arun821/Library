@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('#icon').click(function(){
+              $('ul').toggleClass('show');
+          });
+        });
+    </script>
+</head>
+<body id="body">
+    <nav>
+        <ul>
+            <li><a class="active text-decoration-none font-weight-bold" href="#"><i class="fa fa-home" aria-hidden="true"></i>home</a></li>
+            <li><a class="text-decoration-none font-weight-bold" href="sing.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign up</a></li>
+            <li><a class="text-decoration-none font-weight-bold" href="login.html"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav>
+    
+        <div class="bdy">
+            <div class="dv1">
+                <p>Library</p>
+                <div class="div3"></div>
+            </div>
+            <div class="dv2">
+               <div class="media border p-3">
+                   <img src="https://www.incimages.com/uploaded_files/image/970x450/mark-zuckerberg-stage-getty-images-1940x900_29570.jpg" alt="" class="mr-3 mt-3 rounded-circle">
+                   <div class="media-body">
+                    <h4>14 Useful Sight for Designers</h4>
+                    <div class="col6"><h6>designers.com</h6></div>
+                    <p>2 hours ago . Read more</p>
+                   </div>
+               </div>
+               <div class="media border p-3">
+                    <img src="https://www.coding-girls.com/sites/default/files/styles/cms_bootstrap_1_2/public/blog/images/beautiful-blur-casual-935756.jpg?itok=5omJOZkb" alt="" class="mr-3 mt-3 rounded-circle">
+                    <div class="media-body">
+                        <h4>TrendPaper-What's Trending in the World</h4>
+                        <div class="col6"><h6>betali.st</h6></div>
+                        <p>Last week . Read more</p>
+                    </div>
+                </div>
+                <div class="media border p-3">
+                    <img src="https://weareliferuiner.com/wp-content/uploads/2016/12/hipster-on-tablet-850x476-650x364.jpg" alt="" class="mr-3 mt-3 rounded-circle">
+                    <div class="media-body">
+                        <h4>Repurpose Content to Reach a Wider Audience</h4>
+                    <div class="col6"><h6>97thfloor.com</h6></div>
+                    <p>1 hours ago . Read more</p>
+                    </div>
+                </div>
+                <div class="col7">Show More</div>
+            </div>
+            <div class="footer">
+                <h2>Follow Us</h2>
+                <div class="row r1">
+                    <button id="b1">Twitter</button>
+                    <button id="b2">Facebook</button>
+                    <button id="b3">Google+</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
